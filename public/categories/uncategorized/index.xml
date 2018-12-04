@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uncategorized on 求生之路</title>
+    <link>http://blog.xiaolaoni.xin/categories/uncategorized/</link>
+    <description>Recent content in Uncategorized on 求生之路</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 28 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.xiaolaoni.xin/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello Huge</title>
+      <link>http://blog.xiaolaoni.xin/2018/hellohuge/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xiaolaoni.xin/2018/hellohuge/</guid>
+      <description> Hello Huge </description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://blog.xiaolaoni.xin/2018/helloworld/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xiaolaoni.xin/2018/helloworld/</guid>
+      <description>Hello World 测试Jenkins一键部署是否生效</description>
+    </item>
+    
+  </channel>
+</rss>

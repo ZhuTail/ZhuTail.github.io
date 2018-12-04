@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 求生之路</title>
+    <link>http://blog.xiaolaoni.xin/categories/</link>
+    <description>Recent content in Categories on 求生之路</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="http://blog.xiaolaoni.xin/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java</title>
+      <link>http://blog.xiaolaoni.xin/categories/java/</link>
+      <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xiaolaoni.xin/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncategorized</title>
+      <link>http://blog.xiaolaoni.xin/categories/uncategorized/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xiaolaoni.xin/categories/uncategorized/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>friendship link</title>
+      <link>http://blog.xiaolaoni.xin/categories/friendship-link/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.xiaolaoni.xin/categories/friendship-link/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
