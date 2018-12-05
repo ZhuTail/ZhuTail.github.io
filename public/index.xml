@@ -6,70 +6,8 @@
     <description>Recent content in 求生之路 on 求生之路</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 04 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Nov 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>求生之路</title>
-      <link>http://blog.xiaolaoni.xin/2018/%E6%B1%82%E7%94%9F%E4%B9%8B%E8%B7%AF/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.xiaolaoni.xin/2018/%E6%B1%82%E7%94%9F%E4%B9%8B%E8%B7%AF/</guid>
-      <description>
-
-&lt;h3 id=&#34;dubbo服务远程调用&#34;&gt;dubbo服务远程调用&lt;/h3&gt;
-
-&lt;h3 id=&#34;语法糖&#34;&gt;语法糖&lt;/h3&gt;
-
-&lt;h4 id=&#34;远程连接&#34;&gt;远程连接&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;telnet ip 端口&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;  telnet 127.0.0.1 50888
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;远程调用&#34;&gt;远程调用&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;查看服务&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;所有的服务&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;ls
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;指定服务&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;ls com.zkh360.service.punchout.product.ProductService
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;调用&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;参数为List&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;invoke com.zkh360.service.punchout.product.ProductService.getProductsNoMatterState(&#39;A19947&#39;,[&#39;AG9655&#39;,&#39;GV2605&#39;,&#39;HN7813&#39;])
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;参数为自己创建的对象&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-java&#34;&gt;invoke core.service.user.UserService4Dr.queryCustomerAccount({&amp;quot;class&amp;quot;:&amp;quot;core.model.support.ZkGridCondition&amp;quot;,&amp;quot;rows&amp;quot;:10,&amp;quot;page&amp;quot;:1,&amp;quot;params&amp;quot;:{&amp;quot;customerCode&amp;quot;:&amp;quot;A12345&amp;quot;}})
-invoke core.service.user.UserService4Dr.queryCustomerAccount({&amp;quot;class&amp;quot;:&amp;quot;core.model.support.ZkGridCondition&amp;quot;,&amp;quot;rows&amp;quot;:10,&amp;quot;page&amp;quot;:1,&amp;quot;params&amp;quot;:{&amp;quot;customerCode&amp;quot;:&amp;quot;A12345&amp;quot;,&amp;quot;userName&amp;quot;:&amp;quot;test&amp;quot;}})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;`&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>dubbo服务远程调用</title>
