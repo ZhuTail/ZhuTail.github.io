@@ -6,3 +6,4 @@
 
 * wercker
 * jenkins
+* github hooks
