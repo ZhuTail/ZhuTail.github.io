@@ -80,6 +80,12 @@ invoke core.service.user.UserService4Dr.queryCustomerAccount({&amp;quot;class&am
       <description>
 
 &lt;h3 id=&#34;hello-huge&#34;&gt;Hello Huge&lt;/h3&gt;
+
+&lt;h4 id=&#34;hugo的安装&#34;&gt;hugo的安装&lt;/h4&gt;
+
+&lt;h4 id=&#34;github-pages-gitee-ecs&#34;&gt;GitHub Pages &amp;amp;&amp;amp; Gitee &amp;amp;&amp;amp; ECS&lt;/h4&gt;
+
+&lt;h4 id=&#34;webhooks实现实时发布&#34;&gt;WebHooks实现实时发布&lt;/h4&gt;
 </description>
     </item>
     
