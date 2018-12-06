@@ -1,8 +1,8 @@
 ---
 title: "友情链接"
 author: "ZhuTail"
-tags: ["friendship link"]
-categories: ["friendship link"]
+tags: ["friendshipLlink"]
+categories: ["friendshipLink"]
 date: 2018-11-28
 ---
 

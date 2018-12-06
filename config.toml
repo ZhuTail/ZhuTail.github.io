@@ -36,7 +36,7 @@ preserveTaxonomyNames = true
 
   [[menu.main]]
     name = "友情链接"
-    url = "/friendship-link/"
+    url = "/friendshipLink/"
     weight = 4
 
   [[menu.main]]
