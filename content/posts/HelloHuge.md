@@ -8,8 +8,9 @@ date: 2018-11-28
 
 ### Hello Huge
 
-#### hugo的安装
-
+#### Hugo的安装
+##### Windows
+##### Linux
 #### GitHub Pages && Gitee && ECS
 
 #### WebHooks实现实时发布
