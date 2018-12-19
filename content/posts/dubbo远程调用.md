@@ -32,7 +32,7 @@ date: 2018-11-29
   * 指定服务 
 
     ```shell
-    ls com.zkh360.service.punchout.product.ProductService
+    ls com.swagger.service.punchout.product.ProductService
     ```
 
 * 调用
@@ -40,7 +40,7 @@ date: 2018-11-29
   * 参数为List
 
     ```java
-    invoke com.zkh360.service.punchout.product.ProductService.getProductsNoMatterState('A19947',['AG9655','GV2605','HN7813'])
+    invoke com.swagger.service.punchout.product.ProductService.getProductsNoMatterState('A19947',['AG9655','GV2605','HN7813'])
     ```
 
   * 参数为自己创建的对象
