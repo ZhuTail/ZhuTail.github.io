@@ -1,8 +1,8 @@
 ---
-title: "Hello Huge"
+title: "Hello Hugo"
 author: "ZhuTail"
-tags: ["Huge"]
-categories: ["Uncategorized"]
+tags: ["hugo"]
+categories: ["hugo"]
 date: 2018-11-28
 ---
 
@@ -42,6 +42,12 @@ date: 2018-11-28
 
 #### GitHub Pages && Gitee && ECS
 
-#### WebHooks实现实时发布
+#### WebHooks + Jenkins 实现实时发布
 
-* 为了方便随时写作（愿景），避免每台电脑上都安装环境，所以将hugo编译所需要的环境都安装在了ecs服务器上。
+[Jenkins]: https://jenkins.io/zh/
+[WebHooks]: https://developer.github.com/webhooks/
+
+
+
+* 为了方便随时写作（愿景），避免每台电脑上都安装环境，所以将[hugo](https://gohugo.io/)编译所需要的环境都安装在了ecs服务器上。
+* 
