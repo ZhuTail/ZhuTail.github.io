@@ -20,7 +20,7 @@ date: 2019-10-21
 
 * 使用Web Uploader插件必须引入三种资源：JS, CSS, SWF
 
-* ```js
+* ```
   <!--引入CSS-->
   <link rel="stylesheet" type="text/css" href="webuploader文件夹/webuploader.css">
   
@@ -32,7 +32,7 @@ date: 2019-10-21
 
 ### HTML部分（以图片上传为例）
 
-* ```html
+* ```
   <div>
       <div id="filePicker" style="margin-left: 20px">选择图片</div>
       <button id="submit" class="btn btn-blue" style="display: none">上传				</button>
@@ -43,7 +43,7 @@ date: 2019-10-21
 
 ### JS部分
 
-* ```js
+* ```
   /**
    * 初始化Web Uploader
    *
@@ -247,7 +247,7 @@ date: 2019-10-21
 
 ### JAVA部分
 
-* ```java
+* ```
   /**
    * 工程订单图片上传
    *
@@ -272,7 +272,6 @@ date: 2019-10-21
 ### 遇到的坑
 
 * Web Uploader多次加载，导致选择图片的按钮样式**变大**，如果有时间重复打开关闭弹框，这个按钮能大到让你怀疑人生，直接把一无所知的我整蒙了。通过求助前端大神张导才知道，这是重复初始化导致的，并且亮了一段防止重复初始化的代码让我临摹了一波，果然解决了，在这里给助人为乐的张导点赞。`防止重复初始化的思路是设置一个全局标志位，初始化前先判断这个标志位就可以了。`
-  * ![1571647788991](C:\projects\ZhuTail.github.io\content\posts\1571647788991.png)
 * 选择完图片之后直接关闭弹窗，然后再次打开弹窗进行图片上传，会显示多张预览图。经过分析和查找资料，发现应该是关闭弹窗的时候，没有删除队列里的图片导致的。于是尝试在 `resetUploader` 中调用`model.uploader.removeFile(file)`,但是没有起作用，通过查找api文档，找到了 `uploader.reset();//重置uploader。目前只重置了队列` 和 `uploader.destory();//销毁 webuploader 实例`，经测试 ``uploader.destory()`有效，而且同时解决了上面重复初始化的问题。
 * 上传的默认参数里面有个id，是Web Uploader生成的一个字符串，如果你后端接收额外参数的对象里恰好有个id，而且不是字符串类型，就会出现错误。
 * 设置上传的额外参数可以在options中设置 `uploader.options.formData = obj`，也可以在 `uploadBeforeSend`事件中处理。
