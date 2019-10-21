@@ -19,31 +19,26 @@ date: 2019-10-21
 ### 引入资源
 
 * 使用Web Uploader插件必须引入三种资源：JS, CSS, SWF
-
-* ```
-  <!--引入CSS-->
-  <link rel="stylesheet" type="text/css" href="webuploader文件夹/webuploader.css">
-  
-  <!--引入JS-->
-  <script type="text/javascript" src="webuploader文件夹/webuploader.js"></script>
-  
-  <!--SWF在初始化的时候指定-->
-  ```
+```css
+	<link rel="stylesheet" type="text/css" href="webuploader文件夹/webuploader.css">
+	<script type="text/javascript" src="webuploader文件夹/webuploader.js"></script>
+	<!--SWF在初始化的时候指定--> 
+```
 
 ### HTML部分（以图片上传为例）
 
-* ```
-  <div>
-      <div id="filePicker" style="margin-left: 20px">选择图片</div>
-      <button id="submit" class="btn btn-blue" style="display: none">上传				</button>
-  	<!--用来存放图片-->
-  	<div id="fileList" class="uploader-list clearfix"></div>
-  </div>
-  ```
+```html
+	<div>
+	    <div id="filePicker" style="margin-left: 20px">选择图片</div>
+	    <button id="submit" class="btn btn-blue" style="display: none">上传</button>
+	    <!--用来存放图片-->
+	    <div id="fileList" class="uploader-list clearfix"></div>
+	</div>
+```
 
 ### JS部分
 
-* ```
+```javascript
   /**
    * 初始化Web Uploader
    *
@@ -242,32 +237,33 @@ date: 2019-10-21
       $('#submit_').attr("style", "display:none;");
       // 销毁uploader，否则再次打开时会重新初始化，导致样式变大
       model.uploader.destroy();
-  },
-  ```
+  }
+```
 
 ### JAVA部分
 
-* ```
-  /**
-   * 工程订单图片上传
-   *
-   * @param files
-   * @param fcScamOrderInspectionPhotoDto
-   * @throws IOException
-   */
-  @RequestMapping(value = "/upload", method = {RequestMethod.GET, RequestMethod.POST})
-  @ResponseBody
-  public void upload(@RequestParam("file") MultipartFile[] files, FcScamOrderInspectionPhotoDto fcScamOrderInspectionPhotoDto) throws IOException {
-  	LOG.info("-------------------开始调用上传文件upload接口-------------------");
-      try {
-     		fcScamOrderInspectionPhotoService.batchUploadPhotos
-      	(fcScamOrderInspectionPhotoDto, files);
-      } catch (Exception e) {
-          e.printStackTrace();
-      }
-      LOG.info("-------------------结束调用上传文件upload接口-------------------");
-  }
-  ```
+```java
+/**
+ * 工程订单图片上传
+ *
+ * @param files
+ * @param fcScamOrderInspectionPhotoDto
+ * @throws IOException
+ */
+@RequestMapping(value = "/upload", method = {RequestMethod.GET, RequestMethod.POST})
+@ResponseBody
+public void upload(@RequestParam("file") MultipartFile[] files, 
+FcScamOrderInspectionPhotoDto fcScamOrderInspectionPhotoDto) throws IOException {
+	LOG.info("-------------------开始调用上传文件upload接口-------------------");
+	try {
+			fcScamOrderInspectionPhotoService.batchUploadPhotos
+		(fcScamOrderInspectionPhotoDto, files);
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+	LOG.info("-------------------结束调用上传文件upload接口-------------------");
+}
+```
 
 ### 遇到的坑
 
