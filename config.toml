@@ -1,27 +1,68 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+baseURL = "http://blog.xiaolaoni.xin"
+languageCode = "zh-cn"
+title = "求生之路"
+theme = "LeaveIt"
 
-name = "Hugo Theme Pure"
-license = "MIT"
-licenselink = "https://github.com/xiaoheiAh/hugo-theme-pure/blob/master/LICENSE"
-description = "A powerful and pure theme for hugo~enjoy~"
-homepage = "http://blog.xiaolaoni.xin"
-tags = [
-  "blog",
-  "clean",
-  "simple",
-  "dark",
-  "white",
-  "search"
-]
-features = []
-min_version = "0.57.2"
+paginate = 12
+enableEmoji = true
+enableRobotsTXT = true
+googleAnalytics = ""
 
-[author]
-name = "福斯特先生"
-homepage = "http://blog.xiaolaoni.xin"
+preserveTaxonomyNames = true
 
-[original]
-name = "hexo-theme-pure"
-homepage = "http://blog.xiaolaoni.xin"
-repo = "https://github.com/cofess/hexo-theme-pure"
+[blackfriday]
+  hrefTargetBlank = true
+  nofollowLinks = true
+  noreferrerLinks = true
+
+[Permalinks]
+ posts = "/:year/:filename/"
+
+[menu]
+  [[menu.main]]
+    name = "博客"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    name = "目录"
+    url = "/categories/"
+    weight = 2
+
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 3
+
+  [[menu.main]]
+    name = "友情链接"
+    url = "/friendshipLink/"
+    weight = 4
+
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 5
+
+[params]
+    since = 2017
+    author = "ZhuTail"                        # Author's name
+    avatar = "/images/me/zhutail.jpg"           # Author's avatar
+    subtitle = ""          # Subtitle
+    cdn_url = ""           # Base CDN URL
+    home_mode = "" # post or other
+
+    google_verification = ""
+   
+    description = "" # site description
+    keywords = "" # site keywords
+
+    beian = ""
+    baiduAnalytics = ""
+
+    license= '本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可'
+
+[params.social]
+    GitHub = "ZhuTail"
+    Email   = "xxoo"
+    Wechat = "/images/me/wechat.png"  # Wechat QRcode image
